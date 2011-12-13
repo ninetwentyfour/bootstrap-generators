@@ -1,0 +1,2 @@
+(function(a){a.fn.button=function(d){return this.each(function(){if("toggle"==d)a(this).toggleClass("active");else if(d){var c=d,b=a(this),e=b.data(),c=c+"Text";e.resetText||b.data("resetText",b.html());b.html(e[c]||a.fn.button.defaults[c]);"loadingText"==c?b.addClass("disabled").attr("disabled","disabled"):b.removeClass("disabled").removeAttr("disabled")}})};a.fn.button.defaults={loadingText:"loading..."};a(function(){a("body").delegate(".btn[data-toggle]","click",function(){a(this).button("toggle")})})})(window.jQuery||
+window.ender);
